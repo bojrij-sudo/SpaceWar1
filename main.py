@@ -55,10 +55,10 @@ OVERLOAD = 500.0          # предел накопления
 OVERHEAT_E = OVERLOAD * 0.9
 
 SHIP = {
-    "cruiser":    dict(hp=1000, thrust=120, vmax=220, turn=2.0, cost=10.0, r=30),
-    "fighter":    dict(hp=350,  thrust=200, vmax=320, turn=3.5, cost=8.0,  r=16),
-    "raider":     dict(hp=600,  thrust=260, vmax=380, turn=3.0, cost=10.0, r=20),
-    "battleship": dict(hp=3500, thrust=40,  vmax=90,  turn=0.8, cost=15.0, r=55),
+    "cruiser":    dict(hp=5000, thrust=120, vmax=220, turn=2.5, cost=10.0, r=30),
+    "fighter":    dict(hp=1750,  thrust=200, vmax=320, turn=4.375, cost=8.0,  r=16),
+    "raider":     dict(hp=3000,  thrust=260, vmax=380, turn=3.75, cost=10.0, r=20),
+    "battleship": dict(hp=17500, thrust=40,  vmax=90,  turn=1, cost=15.0, r=55),
 }
 REACTOR_OUT = {"cruiser": 100.0, "fighter": 100.0, "raider": 100.0, "battleship": 150.0}
 
@@ -73,14 +73,14 @@ RAM_MIN, RAM_K = 50.0, 0.5
 LOOT_CHANCE, LOOT_LIFE, LOOT_PICK = 0.6, 15.0, 45.0
 
 WAVES = [
-    [("fighter", 4)],
-    [("fighter", 6)],
-    [("fighter", 8), ("raider", 1)],
-    [("fighter", 8), ("raider", 2)],
-    [("fighter", 6), ("raider", 2)],
-    [("fighter", 6), ("raider", 3)],
-    [("fighter", 10), ("raider", 3)],
-    [("raider", 4), ("battleship", 1)],
+    [("fighter", 8)],
+    [("fighter", 12)],
+    [("fighter", 16), ("raider", 2)],
+    [("fighter", 16), ("raider", 4)],
+    [("fighter", 12), ("raider", 4)],
+    [("fighter", 12), ("raider", 6)],
+    [("fighter", 20), ("raider", 6)],
+    [("raider", 8), ("battleship", 2)],
 ]
 
 WEAPON_NAMES = {"railgun": "РЕЛЬСОТРОН", "laser": "ЛАЗЕРЫ",
